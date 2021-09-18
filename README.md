@@ -23,5 +23,7 @@ Features:
 -Anomlay Detection. On memory usage. A modified version of DBSCAN was used to identify outliers in current batch of 
  memory usage history. Sliding window approach was used to constantly detect anomalies for n number of collected instances
  of Memory usage.   
+ 
+ NOTE! - SNAPSHOTS OF WORKING APP IN PICTURES FOLDER
 
 <pre>
