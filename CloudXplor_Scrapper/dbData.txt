@@ -1,0 +1,69 @@
+7rnZFdo4DVYpRLwz9JdwmEcoBiu1
+7rnZFdo4DVYpRLwz9JdwmEcoBiu1system1
+HostSummaryByStatement
+host statement total total_latency max_latency lock_latency rows_sent rows_examined rows_affected full_scans 
+localhost select 3983 3.34 min 1.91 s 5.20 s 47054 385769 0 3185 
+localhost jump_if_not 83926 567.54 ms 15.60 ms   0 ps 0 0 0 0 
+localhost freturn 42361 295.65 ms 2.68 ms   0 ps 0 0 0 0 
+localhost set_option 2394 294.42 ms 13.29 ms   0 ps 0 0 0 0 
+localhost stmt 796 211.92 ms 12.71 ms   0 ps 0 796 0 0 
+localhost set 1592 149.45 ms 12.64 ms   0 ps 0 796 0 0 
+HostSummary
+host statements statement_latency statement_avg_latency table_scans file_ios file_io_latency current_connections total_connections unique_users current_memory total_memory_allocated 
+localhost 270106 6.74 min 1.50 ms 6372 84 250.32 ms 3 799 2 1.65 MiB 3.40 GiB 
+ProcessList
+thd_id conn_id user db command state time current_statement statement_latency progress lock_latency rows_examined rows_sent rows_affected tmp_tables tmp_disk_tables full_scan last_statement last_statement_latency current_memory last_wait last_wait_latency source trx_latency trx_state trx_autocommit pid program_name 
+13 null innodb/page_flush_coordinator_thread null null null 15296 null null null null null null null null null NO null null 1.64 KiB null null null null null null null null 
+24 null innodb/dict_stats_thread null null null 15284 null null null null null null null null null NO null null 1.28 KiB null null null null null null null null 
+23 null innodb/srv_master_thread null null null 15284 null null null null null null null null null NO null null 1.28 KiB null null null null null null null null 
+25 null innodb/fts_optimize_thread null null null 15283 null null null null null null null null null NO null null 1.92 KiB null null null null null null null null 
+40 null innodb/srv_worker_thread null null null 15280 null null null null null null null null null NO null null 1.28 KiB null null null null null null null null 
+38 null innodb/srv_worker_thread null null null 15280 null null null null null null null null null NO null null 1.28 KiB null null null null null null null null 
+36 null innodb/srv_worker_thread null null null 15280 null null null null null null null null null NO null null 1.28 KiB null null null null null null null null 
+34 null innodb/srv_purge_thread null null null 15280 null null null null null null null null null NO null null 1.28 KiB null null null null null null null null 
+33 null innodb/clone_gtid_thread null null waiting for handler commit 15280 null null null null null null null null null NO null null 525.15 KiB null null null 39.24 us COMMITTED YES null null 
+44 7 sql/compress_gtid_table null Daemon Suspending 15279 null null null null null null null null null NO null null 13.83 KiB null null null 92.43 us COMMITTED YES null null 
+43 5 sql/event_scheduler null Daemon Waiting on empty queue 15279 null null null null null null null null null NO null null 16.18 KiB null null null null null null null null 
+1 null sql/main mysql null null 15278 null null null null null null null null null NO null null 1.00 MiB null null null 80.08 us COMMITTED YES null null 
+673 634 furrukh@localhost sys Sleep null 1211 null null null 644.00 us 16 8 0 0 0 YES SELECT * FROM sys.statement_analysis 1.63 ms 273.90 KiB null null null 903.44 us COMMITTED YES null null 
+844 805 furrukh@localhost sys Query null 1 SET @sys.statement_truncate_le ... ('statement_truncate_len', 64) 209.85 ms null 1.81 ms 1 0 0 4 0 YES null null 667.84 KiB null null null 208.09 ms ACTIVE YES null null 
+10 null innodb/io_write_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+3 null innodb/io_ibuf_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+45 null mysqlx/acceptor_network null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+4 null innodb/io_log_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+5 null innodb/io_read_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+42 null sql/signal_handler null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+41 null innodb/srv_worker_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+6 null innodb/io_read_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+39 null innodb/srv_worker_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+7 null innodb/io_read_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+37 null innodb/srv_worker_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+8 null innodb/io_read_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+35 null innodb/srv_purge_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+9 null innodb/io_write_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+15 null innodb/log_flush_notifier_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+32 null innodb/buf_dump_thread null null null null null null null null null null null null null NO null null  293 bytes null null null null null null null null 
+29 null mysqlx/acceptor_network null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+28 null mysqlx/worker null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+26 null mysqlx/worker null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+11 null innodb/io_write_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+12 null innodb/io_write_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+14 null innodb/log_checkpointer_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+22 null innodb/buf_resize_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+21 null innodb/srv_monitor_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+20 null innodb/srv_error_monitor_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+19 null innodb/srv_lock_timeout_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+18 null innodb/log_writer_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+17 null innodb/log_write_notifier_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+16 null innodb/log_flusher_thread null null null null null null null null null null null null null NO null null    0 bytes null null null null null null null null 
+StatementAnalysis
+query db full_scan exec_count err_count warn_count total_latency max_latency avg_latency lock_latency rows_sent rows_sent_avg rows_examined rows_examined_avg rows_affected rows_affected_avg tmp_tables tmp_disk_tables rows_sorted sort_merge_passes digest first_seen last_seen 
+SELECT `t` . `THREAD_ID` AS `t ... T_NUMBER_OF_BYTES_USED` ) DESC sys * 797 0 0 2.86 min 1.91 s 215.29 ms 2.77 s 34358 43 35155 44 0 0 3188 0 68716 0 2a5e41c03bf35093f51e81fb81b13e07005f0c742759ae7a75c10afa4cfe9c9d 2021-07-26 19:21:36.397469000 2021-07-26 23:30:02.139691000 
+SELECT IF ( ( `performance_sch ... by_event_name` GROUP BY IF ( ( sys * 797 0 0 22.41 s 235.97 ms 28.12 ms 1.36 s 797 1 797 1 0 0 6376 0 6376 0 a9c225761eebf026d439bd89cb260b114eac8a185f6e365afa73233bfb225421 2021-07-26 19:21:36.126933000 2021-07-26 23:30:01.912929000 
+SELECT IF ( ( `performance_sch ... sent` , `performance_schema` . sys * 798 0 0 3.52 s 94.97 ms 4.42 ms 446.09 ms 4784 6 336752 422 0 0 0 0 4784 0 0d948f83ffea8273f3fdb332852fac5ff08247ec8366e163325e718d86957675 2021-07-26 19:21:35.910811000 2021-07-26 23:30:01.892088000 
+SELECT `sys` . `format_stateme ... atency` , `format_pico_time` ( sys * 796 0 0 2.94 s 24.80 ms 3.69 ms 627.42 ms 6367 8 12734 16 0 0 0 0 6367 0 508486bd060b13d75e7374136fec54ea4e8827b60fbb8fac7aded21a9ecf3c8a 2021-07-26 19:21:36.485435000 2021-07-26 23:29:53.177489000 
+SELECT @@SESSION . `auto_incre ... ait_timeout` AS `wait_timeout` sys  798 0 0 359.04 ms 26.13 ms 449.93 us   0 ps 798 1 798 1 0 0 0 0 0 0 c20fcea11911be36651b7ca7bd3712d4ed9ac1134cee9c6620039e1fb13b5eff 2021-07-26 19:21:35.737254000 2021-07-26 23:30:01.886151000 
+SET NAMES `utf8mb4` sys  798 0 0 104.65 ms 5.43 ms 131.14 us   0 ps 0 0 0 0 0 0 0 0 0 0 6d631211d940af327fe3f82a008b908dc6cba3912cae61881353006e73354eee 2021-07-26 19:21:35.785573000 2021-07-26 23:30:01.886667000 
+SET `autocommit` = ? sys  798 0 0 97.94 ms 13.29 ms 122.73 us   0 ps 0 0 0 0 0 0 0 0 0 0 158bfe3d4b4b0a372a4acdb38affe2cb4f6b3cb21a9af0ea9fad9a9a083ac18a 2021-07-26 19:21:35.786936000 2021-07-26 23:30:01.887192000 
+SET `character_set_results` = ? sys  798 0 0 91.83 ms 3.92 ms 115.08 us   0 ps 0 0 0 0 0 0 0 0 0 0 ee697e4b4152b6204eb23d2a055339cc8262297cf42467b78c1e241ddfcfbce3 2021-07-26 19:21:35.786257000 2021-07-26 23:30:01.886938000 
+Over2
